@@ -1,0 +1,130 @@
+\hypertarget{common__functions_8h}{}\doxysection{/home/andrey/\+Downloads/solve\+Square\+Equation-\/master (1)/header files/common\+\_\+functions.h File Reference}
+\label{common__functions_8h}\index{/home/andrey/Downloads/solveSquareEquation-\/master (1)/header files/common\_functions.h@{/home/andrey/Downloads/solveSquareEquation-\/master (1)/header files/common\_functions.h}}
+{\ttfamily \#include $<$math.\+h$>$}\newline
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{common__functions_8h_a19d25e625cb46973b35043b2d7109ac0}{result\+Of\+Compare\+Two\+Doubles}} \{ \mbox{\hyperlink{common__functions_8h_a19d25e625cb46973b35043b2d7109ac0a95c736070f99b99eb80d1eac1f4ca60f}{L\+E\+SS}}, 
+\mbox{\hyperlink{common__functions_8h_a19d25e625cb46973b35043b2d7109ac0a59a84258a4cb9025b567ee5139455029}{E\+Q\+U\+AL}}, 
+\mbox{\hyperlink{common__functions_8h_a19d25e625cb46973b35043b2d7109ac0af165e191d0fd1c7cc04270fb883dbc02}{M\+O\+RE}}
+ \}
+\begin{DoxyCompactList}\small\item\em Enum type used for comparing two double values. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{common__functions_8h_aa89dfba5c05bfad33fb5957d78061dfe}{double\+Comp}} (const double value\+\_\+1, const double value\+\_\+2)
+\begin{DoxyCompactList}\small\item\em This function compares 2 double values. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{common__functions_8h_ad1466ba4adc3b327fcf24f13a7fbeb32}{check\+If\+Zero}} (const double value)
+\begin{DoxyCompactList}\small\item\em Function that detects if double value is zero. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{common__functions_8h_af3a4e09bc2d8ce6ef32ecf9b1e93b833}{minus\+Zero\+Fix}} (const double value)
+\begin{DoxyCompactList}\small\item\em Function designed to fix bug with -\/0. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{common__functions_8h_ad92ff1230dd68310b74908a02ddd5032}{calculate\+Machine\+Epsilon}} (void)
+\begin{DoxyCompactList}\small\item\em This function calculates machine epsilon. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{common__functions_8h_a750be53afe22b006b8b36b42f3c12323}{clean\+Buffer}} ()
+\begin{DoxyCompactList}\small\item\em This function clears buffer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{common__functions_8h_a19d25e625cb46973b35043b2d7109ac0}\label{common__functions_8h_a19d25e625cb46973b35043b2d7109ac0}} 
+\index{common\_functions.h@{common\_functions.h}!resultOfCompareTwoDoubles@{resultOfCompareTwoDoubles}}
+\index{resultOfCompareTwoDoubles@{resultOfCompareTwoDoubles}!common\_functions.h@{common\_functions.h}}
+\doxysubsubsection{\texorpdfstring{resultOfCompareTwoDoubles}{resultOfCompareTwoDoubles}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{common__functions_8h_a19d25e625cb46973b35043b2d7109ac0}{result\+Of\+Compare\+Two\+Doubles}}}
+
+
+
+Enum type used for comparing two double values. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LESS@{LESS}!common\_functions.h@{common\_functions.h}}\index{common\_functions.h@{common\_functions.h}!LESS@{LESS}}}\mbox{\Hypertarget{common__functions_8h_a19d25e625cb46973b35043b2d7109ac0a95c736070f99b99eb80d1eac1f4ca60f}\label{common__functions_8h_a19d25e625cb46973b35043b2d7109ac0a95c736070f99b99eb80d1eac1f4ca60f}} 
+L\+E\+SS&1st number is less than 2nd. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EQUAL@{EQUAL}!common\_functions.h@{common\_functions.h}}\index{common\_functions.h@{common\_functions.h}!EQUAL@{EQUAL}}}\mbox{\Hypertarget{common__functions_8h_a19d25e625cb46973b35043b2d7109ac0a59a84258a4cb9025b567ee5139455029}\label{common__functions_8h_a19d25e625cb46973b35043b2d7109ac0a59a84258a4cb9025b567ee5139455029}} 
+E\+Q\+U\+AL&Numbers are equal. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MORE@{MORE}!common\_functions.h@{common\_functions.h}}\index{common\_functions.h@{common\_functions.h}!MORE@{MORE}}}\mbox{\Hypertarget{common__functions_8h_a19d25e625cb46973b35043b2d7109ac0af165e191d0fd1c7cc04270fb883dbc02}\label{common__functions_8h_a19d25e625cb46973b35043b2d7109ac0af165e191d0fd1c7cc04270fb883dbc02}} 
+M\+O\+RE&1st numbers is bigger than 2nd. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{common__functions_8h_ad92ff1230dd68310b74908a02ddd5032}\label{common__functions_8h_ad92ff1230dd68310b74908a02ddd5032}} 
+\index{common\_functions.h@{common\_functions.h}!calculateMachineEpsilon@{calculateMachineEpsilon}}
+\index{calculateMachineEpsilon@{calculateMachineEpsilon}!common\_functions.h@{common\_functions.h}}
+\doxysubsubsection{\texorpdfstring{calculateMachineEpsilon()}{calculateMachineEpsilon()}}
+{\footnotesize\ttfamily double calculate\+Machine\+Epsilon (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+This function calculates machine epsilon. 
+
+\mbox{\Hypertarget{common__functions_8h_ad1466ba4adc3b327fcf24f13a7fbeb32}\label{common__functions_8h_ad1466ba4adc3b327fcf24f13a7fbeb32}} 
+\index{common\_functions.h@{common\_functions.h}!checkIfZero@{checkIfZero}}
+\index{checkIfZero@{checkIfZero}!common\_functions.h@{common\_functions.h}}
+\doxysubsubsection{\texorpdfstring{checkIfZero()}{checkIfZero()}}
+{\footnotesize\ttfamily bool check\+If\+Zero (\begin{DoxyParamCaption}\item[{const double}]{value }\end{DoxyParamCaption})}
+
+
+
+Function that detects if double value is zero. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em value} & value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if value equals zero, false if not. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{common__functions_8h_a750be53afe22b006b8b36b42f3c12323}\label{common__functions_8h_a750be53afe22b006b8b36b42f3c12323}} 
+\index{common\_functions.h@{common\_functions.h}!cleanBuffer@{cleanBuffer}}
+\index{cleanBuffer@{cleanBuffer}!common\_functions.h@{common\_functions.h}}
+\doxysubsubsection{\texorpdfstring{cleanBuffer()}{cleanBuffer()}}
+{\footnotesize\ttfamily void clean\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This function clears buffer. 
+
+\mbox{\Hypertarget{common__functions_8h_aa89dfba5c05bfad33fb5957d78061dfe}\label{common__functions_8h_aa89dfba5c05bfad33fb5957d78061dfe}} 
+\index{common\_functions.h@{common\_functions.h}!doubleComp@{doubleComp}}
+\index{doubleComp@{doubleComp}!common\_functions.h@{common\_functions.h}}
+\doxysubsubsection{\texorpdfstring{doubleComp()}{doubleComp()}}
+{\footnotesize\ttfamily int double\+Comp (\begin{DoxyParamCaption}\item[{const double}]{value\+\_\+1,  }\item[{const double}]{value\+\_\+2 }\end{DoxyParamCaption})}
+
+
+
+This function compares 2 double values. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em value\+\_\+1} & 1st value to compare. \\
+\hline
+\mbox{\texttt{ in}}  & {\em value\+\_\+2} & 2nd value to compare. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+number constant from enum set result\+Of\+Compare\+Two\+Doubles.
+\end{DoxyReturn}
+This function compares 2 double values and returns number constant from enum set result\+Of\+Compare\+Two\+Doubles. \mbox{\Hypertarget{common__functions_8h_af3a4e09bc2d8ce6ef32ecf9b1e93b833}\label{common__functions_8h_af3a4e09bc2d8ce6ef32ecf9b1e93b833}} 
+\index{common\_functions.h@{common\_functions.h}!minusZeroFix@{minusZeroFix}}
+\index{minusZeroFix@{minusZeroFix}!common\_functions.h@{common\_functions.h}}
+\doxysubsubsection{\texorpdfstring{minusZeroFix()}{minusZeroFix()}}
+{\footnotesize\ttfamily double minus\+Zero\+Fix (\begin{DoxyParamCaption}\item[{const double}]{value }\end{DoxyParamCaption})}
+
+
+
+Function designed to fix bug with -\/0. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em x} & value that may be -\/0.\+0. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+value if it is not a -\/0.\+0, 0 if it is -\/0. This function compares x with zero and if they are similar, function returns absolute value of x. If they aren\textquotesingle{}t, it just returns x. 
+\end{DoxyReturn}

@@ -1,0 +1,122 @@
+\hypertarget{calculating_8cpp}{}\doxysection{/home/andrey/\+Downloads/solve\+Square\+Equation-\/master (1)/cpp files/calculating.cpp File Reference}
+\label{calculating_8cpp}\index{/home/andrey/Downloads/solveSquareEquation-\/master (1)/cpp files/calculating.cpp@{/home/andrey/Downloads/solveSquareEquation-\/master (1)/cpp files/calculating.cpp}}
+{\ttfamily \#include \char`\"{}calculating\+\_\+functions.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{calculating_8cpp_a9ced2218dbd18f35d29413eb89a03150}{calc\+Discriminant}} (const double a, const double b, const double c)
+\begin{DoxyCompactList}\small\item\em This function calculates discriminant. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{calculating_8cpp_a53e6f9c51f26a75b6e46f244ee7b57e3}{calculate\+Roots\+Of\+Sq\+Eq}} (const double a, const double b, const double c, double $\ast$x1, double $\ast$x2)
+\begin{DoxyCompactList}\small\item\em Function designed to calculate roots of square equation This function works O\+N\+LY with equations where a != 0. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{calculating_8cpp_a21d61fe8251f5bc62a21bc471e66fe28}{solve\+Sq\+Eq}} (const double a, const double b, const double c, double $\ast$x1, double $\ast$x2)
+\begin{DoxyCompactList}\small\item\em Function designed to calculate roots of square equation. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{calculating_8cpp_aeb956d08477040e3d54ef83c3ce717e2}{solve\+Linear\+Eq}} (const double b, const double c, double $\ast$x)
+\begin{DoxyCompactList}\small\item\em This function solves linear equation. $bx + c = 0$. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{calculating_8cpp_a9ced2218dbd18f35d29413eb89a03150}\label{calculating_8cpp_a9ced2218dbd18f35d29413eb89a03150}} 
+\index{calculating.cpp@{calculating.cpp}!calcDiscriminant@{calcDiscriminant}}
+\index{calcDiscriminant@{calcDiscriminant}!calculating.cpp@{calculating.cpp}}
+\doxysubsubsection{\texorpdfstring{calcDiscriminant()}{calcDiscriminant()}}
+{\footnotesize\ttfamily double calc\+Discriminant (\begin{DoxyParamCaption}\item[{const double}]{a,  }\item[{const double}]{b,  }\item[{const double}]{c }\end{DoxyParamCaption})}
+
+
+
+This function calculates discriminant. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em a} & a coefficient in square equation, cannot be 0. \\
+\hline
+\mbox{\texttt{ in}}  & {\em b} & b coefficient in square equation. \\
+\hline
+\mbox{\texttt{ in}}  & {\em c} & c coefficient in square equation. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+value of discriminant.
+\end{DoxyReturn}
+The following formula calculates discriminant~\newline
+ $D = b^2 - 4ac$ \mbox{\Hypertarget{calculating_8cpp_a53e6f9c51f26a75b6e46f244ee7b57e3}\label{calculating_8cpp_a53e6f9c51f26a75b6e46f244ee7b57e3}} 
+\index{calculating.cpp@{calculating.cpp}!calculateRootsOfSqEq@{calculateRootsOfSqEq}}
+\index{calculateRootsOfSqEq@{calculateRootsOfSqEq}!calculating.cpp@{calculating.cpp}}
+\doxysubsubsection{\texorpdfstring{calculateRootsOfSqEq()}{calculateRootsOfSqEq()}}
+{\footnotesize\ttfamily int calculate\+Roots\+Of\+Sq\+Eq (\begin{DoxyParamCaption}\item[{const double}]{a,  }\item[{const double}]{b,  }\item[{const double}]{c,  }\item[{double $\ast$}]{x1,  }\item[{double $\ast$}]{x2 }\end{DoxyParamCaption})}
+
+
+
+Function designed to calculate roots of square equation This function works O\+N\+LY with equations where a != 0. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em a} & a coefficient in square equation, cannot be 0. \\
+\hline
+\mbox{\texttt{ in}}  & {\em b} & b coefficient in square equation. \\
+\hline
+\mbox{\texttt{ in}}  & {\em c} & c coefficient in square equation. \\
+\hline
+\mbox{\texttt{ out}}  & {\em x1} & pointer to the 1st root of equation. \\
+\hline
+\mbox{\texttt{ out}}  & {\em x2} & pointer to the 2nd root of equation.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+N\+O\+\_\+\+R\+O\+O\+TS -\/ no roots, R\+O\+O\+T\+\_\+1 -\/ 1 root, R\+O\+O\+T\+S\+\_\+2 -\/ 2 roots.
+\end{DoxyReturn}
+First, this function calculates discriminant of equation. Then function detect\+Sign\+Of\+Discr (double D) returns number constant. After that, switch decides what case it jumps to and run case.
+
+Formula that calculates roots\+:~\newline
+ $x = (-b +- \sqrt{D})/2a$ \mbox{\Hypertarget{calculating_8cpp_aeb956d08477040e3d54ef83c3ce717e2}\label{calculating_8cpp_aeb956d08477040e3d54ef83c3ce717e2}} 
+\index{calculating.cpp@{calculating.cpp}!solveLinearEq@{solveLinearEq}}
+\index{solveLinearEq@{solveLinearEq}!calculating.cpp@{calculating.cpp}}
+\doxysubsubsection{\texorpdfstring{solveLinearEq()}{solveLinearEq()}}
+{\footnotesize\ttfamily int solve\+Linear\+Eq (\begin{DoxyParamCaption}\item[{const double}]{b,  }\item[{const double}]{c,  }\item[{double $\ast$}]{x }\end{DoxyParamCaption})}
+
+
+
+This function solves linear equation. $bx + c = 0$. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em b} & b coefficient in linear equation. \\
+\hline
+\mbox{\texttt{ in}}  & {\em c} & c coefficient in linear equation. \\
+\hline
+\mbox{\texttt{ in}}  & {\em x} & pointer to the root of equation. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+number of roots.
+\end{DoxyReturn}
+This function checks coefficients if they are zero\textquotesingle{}s and then calculate roots.
+
+Formula that calculates root\+:~\newline
+ $x = -b/c$ \mbox{\Hypertarget{calculating_8cpp_a21d61fe8251f5bc62a21bc471e66fe28}\label{calculating_8cpp_a21d61fe8251f5bc62a21bc471e66fe28}} 
+\index{calculating.cpp@{calculating.cpp}!solveSqEq@{solveSqEq}}
+\index{solveSqEq@{solveSqEq}!calculating.cpp@{calculating.cpp}}
+\doxysubsubsection{\texorpdfstring{solveSqEq()}{solveSqEq()}}
+{\footnotesize\ttfamily int solve\+Sq\+Eq (\begin{DoxyParamCaption}\item[{const double}]{a,  }\item[{const double}]{b,  }\item[{const double}]{c,  }\item[{double $\ast$}]{x1,  }\item[{double $\ast$}]{x2 }\end{DoxyParamCaption})}
+
+
+
+Function designed to calculate roots of square equation. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em a} & a coefficient in square equation, cannot be 0. \\
+\hline
+\mbox{\texttt{ out}}  & {\em b} & b coefficient in square equation. \\
+\hline
+\mbox{\texttt{ out}}  & {\em c} & c coefficient in square equation. \\
+\hline
+\mbox{\texttt{ out}}  & {\em x1} & pointer to the 1st root of equation. \\
+\hline
+\mbox{\texttt{ out}}  & {\em x2} & pointer to the 2nd root of equation. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/1 -\/ input is I\+N\+C\+O\+R\+R\+E\+CT. First, this function calls function correct\+Input\+Check.~\newline
+If then input\+Check\+Result equals OK, it decides whether this~\newline
+is linear or square equation. After that, it calls solve\+Linear\+Eq or calculate\+Roots functions. 
+\end{DoxyReturn}

@@ -1,0 +1,74 @@
+\hypertarget{compare_8cpp}{}\doxysection{/home/andrey/coding/solve\+Square\+Equation/cpp files/compare.cpp File Reference}
+\label{compare_8cpp}\index{/home/andrey/coding/solveSquareEquation/cpp files/compare.cpp@{/home/andrey/coding/solveSquareEquation/cpp files/compare.cpp}}
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}comp\+\_\+functions.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{compare_8cpp_aa89dfba5c05bfad33fb5957d78061dfe}{double\+Comp}} (const double value\+\_\+1, const double value\+\_\+2)
+\begin{DoxyCompactList}\small\item\em This function compares 2 double values. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{compare_8cpp_a62a121c0f5413f1123a9f470feaf6709}{check\+If\+Zero}} (const double value)
+\begin{DoxyCompactList}\small\item\em Function that detects if double value is zero. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{compare_8cpp_a4a91b048d9fedffecc79d02b7fc1e23c}{if\+Two\+Ptrs\+Have\+Diff\+Addr}} (double $\ast$ptr\+\_\+1, double $\ast$ptr\+\_\+2)
+\begin{DoxyCompactList}\small\item\em This function checks if 2 pointers have same address. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{compare_8cpp_a62a121c0f5413f1123a9f470feaf6709}\label{compare_8cpp_a62a121c0f5413f1123a9f470feaf6709}} 
+\index{compare.cpp@{compare.cpp}!checkIfZero@{checkIfZero}}
+\index{checkIfZero@{checkIfZero}!compare.cpp@{compare.cpp}}
+\doxysubsubsection{\texorpdfstring{checkIfZero()}{checkIfZero()}}
+{\footnotesize\ttfamily int check\+If\+Zero (\begin{DoxyParamCaption}\item[{const double}]{value }\end{DoxyParamCaption})}
+
+
+
+Function that detects if double value is zero. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if true, 0 if false. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{compare_8cpp_aa89dfba5c05bfad33fb5957d78061dfe}\label{compare_8cpp_aa89dfba5c05bfad33fb5957d78061dfe}} 
+\index{compare.cpp@{compare.cpp}!doubleComp@{doubleComp}}
+\index{doubleComp@{doubleComp}!compare.cpp@{compare.cpp}}
+\doxysubsubsection{\texorpdfstring{doubleComp()}{doubleComp()}}
+{\footnotesize\ttfamily int double\+Comp (\begin{DoxyParamCaption}\item[{const double}]{value\+\_\+1,  }\item[{const double}]{value\+\_\+2 }\end{DoxyParamCaption})}
+
+
+
+This function compares 2 double values. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em value\+\_\+1} & 1st value to compare. \\
+\hline
+\mbox{\texttt{ in}}  & {\em value\+\_\+2} & 2nd value to compare. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+number constant from enum set result\+Of\+Compare\+Two\+Doubles.
+\end{DoxyReturn}
+This function compares 2 double values and returns number constant from enum set result\+Of\+Compare\+Two\+Doubles. \mbox{\Hypertarget{compare_8cpp_a4a91b048d9fedffecc79d02b7fc1e23c}\label{compare_8cpp_a4a91b048d9fedffecc79d02b7fc1e23c}} 
+\index{compare.cpp@{compare.cpp}!ifTwoPtrsHaveDiffAddr@{ifTwoPtrsHaveDiffAddr}}
+\index{ifTwoPtrsHaveDiffAddr@{ifTwoPtrsHaveDiffAddr}!compare.cpp@{compare.cpp}}
+\doxysubsubsection{\texorpdfstring{ifTwoPtrsHaveDiffAddr()}{ifTwoPtrsHaveDiffAddr()}}
+{\footnotesize\ttfamily int if\+Two\+Ptrs\+Have\+Diff\+Addr (\begin{DoxyParamCaption}\item[{double $\ast$}]{ptr\+\_\+1,  }\item[{double $\ast$}]{ptr\+\_\+2 }\end{DoxyParamCaption})}
+
+
+
+This function checks if 2 pointers have same address. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em ptr1} & 1st pointer value \\
+\hline
+\mbox{\texttt{ out}}  & {\em ptr2} & 2nd pointer value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if have same address, 1 if different 
+\end{DoxyReturn}

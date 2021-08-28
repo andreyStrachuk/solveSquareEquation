@@ -1,0 +1,186 @@
+# depslib dependency file v1.0
+1629405489 source:c:\users\andrey\documents\solvesquareequation\main.cpp
+	<assert.h>
+	<stdio.h>
+	<math.h>
+	<stdlib.h>
+
+1629405489 
+
+1629736891 source:/home/andrey/coding/solveSquareEquation/main.cpp
+	<assert.h>
+	<stdio.h>
+	<math.h>
+	<stdlib.h>
+	"calculating_functions.h"
+	"comp_functions.h"
+	"display_functions.h"
+	"fix_functions.h"
+	"input_functions.h"
+	"unit_test_functions.h"
+
+1629649670 /home/andrey/coding/solveSquareEquation/sq_functions.h
+
+1629721730 /home/andrey/coding/solveSquareEquation/calculating_functions.h
+
+1629721741 /home/andrey/coding/solveSquareEquation/comp_functions.h
+
+1629721745 /home/andrey/coding/solveSquareEquation/display_functions.h
+
+1629721749 /home/andrey/coding/solveSquareEquation/fix_functions.h
+
+1629721752 /home/andrey/coding/solveSquareEquation/input_functions.h
+
+1629721131 /home/andrey/coding/solveSquareEquation/unit_test_functions.h
+
+1629721698 source:/home/andrey/coding/solveSquareEquation/compare.cpp
+	<math.h>
+	"comp_functions.h"
+
+1629721706 source:/home/andrey/coding/solveSquareEquation/fix.cpp
+	<math.h>
+	"fix_functions.h"
+	"comp_functions.h"
+
+1629737224 source:/home/andrey/coding/solveSquareEquation/display.cpp
+	<stdio.h>
+	"display_functions.h"
+	"input_functions.h"
+
+1629721710 source:/home/andrey/coding/solveSquareEquation/input.cpp
+	<assert.h>
+	<stdio.h>
+	"input_functions.h"
+
+1629736895 source:/home/andrey/coding/solveSquareEquation/unit_tests.cpp
+	<stdio.h>
+	<math.h>
+	"unit_test_functions.h"
+	"calculating_functions.h"
+	"display_functions.h"
+	"comp_functions.h"
+	"input_functions.h"
+
+1629722246 source:/home/andrey/coding/solveSquareEquation/calculating.cpp
+	<math.h>
+	<assert.h>
+	<stdio.h>
+	"calculating_functions.h"
+	"comp_functions.h"
+	"fix_functions.h"
+	"display_functions.h"
+	"input_functions.h"
+
+1629967151 source:/home/andrey/coding/solveSquareEquation/cpp files/calculating.cpp
+	"calculating_functions.h"
+
+1629737230 source:/home/andrey/coding/solveSquareEquation/cpp files/compare.cpp
+	<math.h>
+	"comp_functions.h"
+
+1629967195 source:/home/andrey/coding/solveSquareEquation/cpp files/display.cpp
+	"display_functions.h"
+
+1629721706 source:/home/andrey/coding/solveSquareEquation/cpp files/fix.cpp
+	<math.h>
+	"fix_functions.h"
+	"comp_functions.h"
+
+1629966863 source:/home/andrey/coding/solveSquareEquation/cpp files/input.cpp
+	"input_functions.h"
+
+1629967298 source:/home/andrey/coding/solveSquareEquation/cpp files/main.cpp
+	<stdio.h>
+	<stdlib.h>
+	"input_functions.h"
+	"calculating_functions.h"
+	"unit_test_functions.h"
+
+1629963244 source:/home/andrey/coding/solveSquareEquation/cpp files/unit_tests.cpp
+	"unit_test_functions.h"
+
+1629901742 source:/home/andrey/coding/solveSquareEquation/cpp files/common.cpp
+	<stdio.h>
+	<cfloat>
+	"common_functions.h"
+
+1629885539 /home/andrey/coding/solveSquareEquation/header files/calculating_functions.h
+	<math.h>
+	<assert.h>
+	<stdio.h>
+	"common_functions.h"
+	"display_functions.h"
+	"input_functions.h"
+
+1629892879 /home/andrey/coding/solveSquareEquation/header files/common_functions.h
+	<math.h>
+
+1629837947 /home/andrey/coding/solveSquareEquation/header files/display_functions.h
+	"calculating_functions.h"
+	<stdio.h>
+
+1629837929 /home/andrey/coding/solveSquareEquation/header files/input_functions.h
+	<assert.h>
+	<stdio.h>
+
+1629841239 /home/andrey/coding/solveSquareEquation/header files/unit_test_functions.h
+	<stdio.h>
+	<math.h>
+	"calculating_functions.h"
+	"display_functions.h"
+	"common_functions.h"
+	"input_functions.h"
+	"unit_test_functions.h"
+
+1630135238 source:/home/andrey/Downloads/solveSquareEquation-master (1)/cpp files/calculating.cpp
+	"calculating_functions.h"
+
+1630135549 source:/home/andrey/Downloads/solveSquareEquation-master (1)/cpp files/common.cpp
+	<stdio.h>
+	<cfloat>
+	"common_functions.h"
+
+1629968039 source:/home/andrey/Downloads/solveSquareEquation-master (1)/cpp files/display.cpp
+	"display_functions.h"
+
+1630135569 source:/home/andrey/Downloads/solveSquareEquation-master (1)/cpp files/input.cpp
+	"input_functions.h"
+
+1630135143 source:/home/andrey/Downloads/solveSquareEquation-master (1)/cpp files/main.cpp
+	<stdio.h>
+	<stdlib.h>
+	"input_functions.h"
+	"calculating_functions.h"
+	"unit_test_functions.h"
+
+1630134611 source:/home/andrey/Downloads/solveSquareEquation-master (1)/cpp files/unit_tests.cpp
+	"unit_test_functions.h"
+
+1630135538 /home/andrey/Downloads/solveSquareEquation-master (1)/header files/common_functions.h
+	<math.h>
+
+1630134087 /home/andrey/Downloads/solveSquareEquation-master (1)/header files/display_functions.h
+	"calculating_functions.h"
+	<stdio.h>
+
+1630134414 /home/andrey/Downloads/solveSquareEquation-master (1)/header files/calculating_functions.h
+	<math.h>
+	<assert.h>
+	<stdio.h>
+	"common_functions.h"
+	"display_functions.h"
+	"input_functions.h"
+
+1630134104 /home/andrey/Downloads/solveSquareEquation-master (1)/header files/input_functions.h
+	<assert.h>
+	<stdio.h>
+	"common_functions.h"
+
+1630134157 /home/andrey/Downloads/solveSquareEquation-master (1)/header files/unit_test_functions.h
+	<stdio.h>
+	"calculating_functions.h"
+	"display_functions.h"
+	"common_functions.h"
+	"input_functions.h"
+	"unit_test_functions.h"
+

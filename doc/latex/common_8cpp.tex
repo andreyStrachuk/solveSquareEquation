@@ -1,0 +1,97 @@
+\hypertarget{common_8cpp}{}\doxysection{/home/andrey/\+Downloads/solve\+Square\+Equation-\/master (1)/cpp files/common.cpp File Reference}
+\label{common_8cpp}\index{/home/andrey/Downloads/solveSquareEquation-\/master (1)/cpp files/common.cpp@{/home/andrey/Downloads/solveSquareEquation-\/master (1)/cpp files/common.cpp}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$cfloat$>$}\newline
+{\ttfamily \#include \char`\"{}common\+\_\+functions.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{common_8cpp_aa89dfba5c05bfad33fb5957d78061dfe}{double\+Comp}} (const double value\+\_\+1, const double value\+\_\+2)
+\begin{DoxyCompactList}\small\item\em This function compares 2 double values. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{common_8cpp_ad1466ba4adc3b327fcf24f13a7fbeb32}{check\+If\+Zero}} (const double value)
+\begin{DoxyCompactList}\small\item\em Function that detects if double value is zero. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{common_8cpp_af3a4e09bc2d8ce6ef32ecf9b1e93b833}{minus\+Zero\+Fix}} (const double value)
+\begin{DoxyCompactList}\small\item\em Function designed to fix bug with -\/0. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{common_8cpp_a18a26056429561a5702da39d68ed01a8}{calculate\+Machine\+Epsilon}} ()
+\begin{DoxyCompactList}\small\item\em This function calculates machine epsilon. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{common_8cpp_a750be53afe22b006b8b36b42f3c12323}{clean\+Buffer}} ()
+\begin{DoxyCompactList}\small\item\em This function clears buffer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{common_8cpp_a18a26056429561a5702da39d68ed01a8}\label{common_8cpp_a18a26056429561a5702da39d68ed01a8}} 
+\index{common.cpp@{common.cpp}!calculateMachineEpsilon@{calculateMachineEpsilon}}
+\index{calculateMachineEpsilon@{calculateMachineEpsilon}!common.cpp@{common.cpp}}
+\doxysubsubsection{\texorpdfstring{calculateMachineEpsilon()}{calculateMachineEpsilon()}}
+{\footnotesize\ttfamily double calculate\+Machine\+Epsilon (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This function calculates machine epsilon. 
+
+\mbox{\Hypertarget{common_8cpp_ad1466ba4adc3b327fcf24f13a7fbeb32}\label{common_8cpp_ad1466ba4adc3b327fcf24f13a7fbeb32}} 
+\index{common.cpp@{common.cpp}!checkIfZero@{checkIfZero}}
+\index{checkIfZero@{checkIfZero}!common.cpp@{common.cpp}}
+\doxysubsubsection{\texorpdfstring{checkIfZero()}{checkIfZero()}}
+{\footnotesize\ttfamily bool check\+If\+Zero (\begin{DoxyParamCaption}\item[{const double}]{value }\end{DoxyParamCaption})}
+
+
+
+Function that detects if double value is zero. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em value} & value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if value equals zero, false if not. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{common_8cpp_a750be53afe22b006b8b36b42f3c12323}\label{common_8cpp_a750be53afe22b006b8b36b42f3c12323}} 
+\index{common.cpp@{common.cpp}!cleanBuffer@{cleanBuffer}}
+\index{cleanBuffer@{cleanBuffer}!common.cpp@{common.cpp}}
+\doxysubsubsection{\texorpdfstring{cleanBuffer()}{cleanBuffer()}}
+{\footnotesize\ttfamily void clean\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This function clears buffer. 
+
+\mbox{\Hypertarget{common_8cpp_aa89dfba5c05bfad33fb5957d78061dfe}\label{common_8cpp_aa89dfba5c05bfad33fb5957d78061dfe}} 
+\index{common.cpp@{common.cpp}!doubleComp@{doubleComp}}
+\index{doubleComp@{doubleComp}!common.cpp@{common.cpp}}
+\doxysubsubsection{\texorpdfstring{doubleComp()}{doubleComp()}}
+{\footnotesize\ttfamily int double\+Comp (\begin{DoxyParamCaption}\item[{const double}]{value\+\_\+1,  }\item[{const double}]{value\+\_\+2 }\end{DoxyParamCaption})}
+
+
+
+This function compares 2 double values. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em value\+\_\+1} & 1st value to compare. \\
+\hline
+\mbox{\texttt{ in}}  & {\em value\+\_\+2} & 2nd value to compare. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+number constant from enum set result\+Of\+Compare\+Two\+Doubles.
+\end{DoxyReturn}
+This function compares 2 double values and returns number constant from enum set result\+Of\+Compare\+Two\+Doubles. \mbox{\Hypertarget{common_8cpp_af3a4e09bc2d8ce6ef32ecf9b1e93b833}\label{common_8cpp_af3a4e09bc2d8ce6ef32ecf9b1e93b833}} 
+\index{common.cpp@{common.cpp}!minusZeroFix@{minusZeroFix}}
+\index{minusZeroFix@{minusZeroFix}!common.cpp@{common.cpp}}
+\doxysubsubsection{\texorpdfstring{minusZeroFix()}{minusZeroFix()}}
+{\footnotesize\ttfamily double minus\+Zero\+Fix (\begin{DoxyParamCaption}\item[{const double}]{value }\end{DoxyParamCaption})}
+
+
+
+Function designed to fix bug with -\/0. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em x} & value that may be -\/0.\+0. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+value if it is not a -\/0.\+0, 0 if it is -\/0. This function compares x with zero and if they are similar, function returns absolute value of x. If they aren\textquotesingle{}t, it just returns x. 
+\end{DoxyReturn}

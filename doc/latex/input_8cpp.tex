@@ -1,0 +1,37 @@
+\hypertarget{input_8cpp}{}\doxysection{/home/andrey/\+Downloads/solve\+Square\+Equation-\/master (1)/cpp files/input.cpp File Reference}
+\label{input_8cpp}\index{/home/andrey/Downloads/solveSquareEquation-\/master (1)/cpp files/input.cpp@{/home/andrey/Downloads/solveSquareEquation-\/master (1)/cpp files/input.cpp}}
+{\ttfamily \#include \char`\"{}input\+\_\+functions.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{input_8cpp_aad557ed09e87f78fcbb274f08fff3962}{input\+And\+Check}} (double $\ast$a, double $\ast$b, double $\ast$c)
+\begin{DoxyCompactList}\small\item\em This function returns error code if input is incorrect. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{input_8cpp_aad557ed09e87f78fcbb274f08fff3962}\label{input_8cpp_aad557ed09e87f78fcbb274f08fff3962}} 
+\index{input.cpp@{input.cpp}!inputAndCheck@{inputAndCheck}}
+\index{inputAndCheck@{inputAndCheck}!input.cpp@{input.cpp}}
+\doxysubsubsection{\texorpdfstring{inputAndCheck()}{inputAndCheck()}}
+{\footnotesize\ttfamily int input\+And\+Check (\begin{DoxyParamCaption}\item[{double $\ast$}]{a,  }\item[{double $\ast$}]{b,  }\item[{double $\ast$}]{c }\end{DoxyParamCaption})}
+
+
+
+This function returns error code if input is incorrect. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & a coefficient. \\
+\hline
+{\em b} & b coefficient. \\
+\hline
+{\em c} & c coefficient. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+input\+Check\+Result -\/ constant from enum set result\+Of\+Input.
+\end{DoxyReturn}
+Function initializes variable amount\+Of\+Input\+Numbers with~\newline
+the number of correctly retrieved numbers. If it is less~\newline
+than 3, function returns lack\+Of\+Three\+Numbers. If the input~\newline
+contains char symbol, it returns presence\+Of\+Inv\+Char. Else, it returns OK. 

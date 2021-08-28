@@ -1,0 +1,414 @@
+\hypertarget{main_8cpp}{}\doxysection{/home/andrey/coding/solve\+Square\+Equation/main.cpp File Reference}
+\label{main_8cpp}\index{/home/andrey/coding/solveSquareEquation/main.cpp@{/home/andrey/coding/solveSquareEquation/main.cpp}}
+{\ttfamily \#include $<$assert.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}sq\+\_\+functions.\+h\char`\"{}}\newline
+Include dependency graph for main.\+cpp\+:
+% FIG 0
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{main_8cpp_a19d25e625cb46973b35043b2d7109ac0}{result\+Of\+Compare\+Two\+Doubles}} \{ \mbox{\hyperlink{main_8cpp_a19d25e625cb46973b35043b2d7109ac0af2360f16fa13d5c5e9b71b733268b47e}{Less}}, 
+\mbox{\hyperlink{main_8cpp_a19d25e625cb46973b35043b2d7109ac0a4c2ccc0164cc7fc1102a4b69361acd1e}{Equal}}, 
+\mbox{\hyperlink{main_8cpp_a19d25e625cb46973b35043b2d7109ac0a67ebccae5b47955d2e76065040a0428e}{More}}
+ \}
+\begin{DoxyCompactList}\small\item\em Enum type used for comparing two double values. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{main_8cpp_af26364c4fcb7161e470b7e073ce1ef3b}{result\+Of\+Input}} \{ \mbox{\hyperlink{main_8cpp_af26364c4fcb7161e470b7e073ce1ef3ba55f4f4cee8fc10981262b1064a7dd90f}{lack\+Of\+Three\+Numbers}}, 
+\mbox{\hyperlink{main_8cpp_af26364c4fcb7161e470b7e073ce1ef3ba1c17f2f155726a3fd8104c8be4b16bfc}{presence\+Of\+Inv\+Char}}, 
+\mbox{\hyperlink{main_8cpp_af26364c4fcb7161e470b7e073ce1ef3ba2bc49ec37d6a5715dd23e85f1ff5bb59}{OK}}
+ \}
+\begin{DoxyCompactList}\small\item\em Enum type used for detecting an error in input. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{main_8cpp_ab4611c2fee0b205012e761712cdc6375}{number\+Of\+Roots}} \{ \mbox{\hyperlink{main_8cpp_ab4611c2fee0b205012e761712cdc6375aad7f22f8a48f53867f93875be4a83ed6}{no\+\_\+roots}}, 
+\mbox{\hyperlink{main_8cpp_ab4611c2fee0b205012e761712cdc6375aa935aa193b946437e5bd505536002a03}{root\+\_\+1}}, 
+\mbox{\hyperlink{main_8cpp_ab4611c2fee0b205012e761712cdc6375a842e39444a6fb4c10885c66d5bd5e77e}{roots\+\_\+2}}, 
+\mbox{\hyperlink{main_8cpp_ab4611c2fee0b205012e761712cdc6375a39a59d6c0d0902be5eb10d365cc282df}{inf\+\_\+number}}
+ \}
+\begin{DoxyCompactList}\small\item\em Enum type used for determining number of roots. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\item 
+int \mbox{\hyperlink{main_8cpp_ae297997867f27fcc063cf7e6f9564846}{correct\+Input\+Check}} (double $\ast$a, double $\ast$b, double $\ast$c)
+\begin{DoxyCompactList}\small\item\em This function returns error code if input is incorrect. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main_8cpp_a65c2ec16bcdcceda117301e87962fd6c}{check\+If\+Null\+Ptr}} (int number\+Of\+Params, void $\ast$ptr,...)
+\begin{DoxyCompactList}\small\item\em Function checks if pointers have N\+U\+LL value. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{main_8cpp_a40e24d4a25bacd4ebc0d20c1af374481}{solve\+Sq\+Eq}} (const int input\+Check\+Result, const double a, const double b, const double c, double $\ast$x1, double $\ast$x2)
+\begin{DoxyCompactList}\small\item\em Function designed to calculate roots of square equation. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{main_8cpp_a62a121c0f5413f1123a9f470feaf6709}{check\+If\+Zero}} (const double value)
+\begin{DoxyCompactList}\small\item\em Function that detects if double value is zero. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{main_8cpp_aeb956d08477040e3d54ef83c3ce717e2}{solve\+Linear\+Eq}} (const double b, const double c, double $\ast$x)
+\begin{DoxyCompactList}\small\item\em This function solves linear equation. $bx + c = 0$. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{main_8cpp_a1234798f34fc85ebb331ebf0c7ea7ce5}{minus\+Zero\+Fix}} (const double x)
+\begin{DoxyCompactList}\small\item\em Function designed to fix bug with -\/0. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{main_8cpp_a81ecaf11f86b4608a945e0f5825f37f6}{calculate\+Roots}} (const double a, const double b, const double c, double $\ast$x1, double $\ast$x2)
+\begin{DoxyCompactList}\small\item\em Function designed to calculate roots of square equation This function works O\+N\+LY with equations where a != 0. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{main_8cpp_a3d575bdd5191b312fc195b00609a63c5}{if\+Two\+Ptrs\+Have\+Diff\+Adr}} (double $\ast$ptr\+\_\+1, double $\ast$ptr\+\_\+2)
+\begin{DoxyCompactList}\small\item\em This function checks if 2 pointers have same address. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{main_8cpp_a9ced2218dbd18f35d29413eb89a03150}{calc\+Discriminant}} (const double a, const double b, const double c)
+\begin{DoxyCompactList}\small\item\em This function calculates discriminant. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{main_8cpp_aa89dfba5c05bfad33fb5957d78061dfe}{double\+Comp}} (const double value\+\_\+1, const double value\+\_\+2)
+\begin{DoxyCompactList}\small\item\em This function compares 2 double values. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main_8cpp_a45fff354c18e9abb10784ae4a2eb77df}{show\+Error}} (const int \mbox{\hyperlink{main_8cpp_af26364c4fcb7161e470b7e073ce1ef3b}{result\+Of\+Input}})
+\begin{DoxyCompactList}\small\item\em This function prints type of error occured during program executing. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main_8cpp_a483946fdcaad59f70cfbe87cfc4e3c78}{show\+Roots}} (const int \mbox{\hyperlink{main_8cpp_ab4611c2fee0b205012e761712cdc6375}{number\+Of\+Roots}}, const double x1, const double x2)
+\begin{DoxyCompactList}\small\item\em This function display roots. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main_8cpp_affa98a3b78d261efb63ceb8191a5a986}{unit\+Test\+Solve\+Lin\+Eq}} (void)
+\item 
+void \mbox{\hyperlink{main_8cpp_ac23aab2ae556abc0eea5aeed87ceb1cf}{unit\+Testcalc\+Roots}} (void)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{main_8cpp_ab4611c2fee0b205012e761712cdc6375}\label{main_8cpp_ab4611c2fee0b205012e761712cdc6375}} 
+\index{main.cpp@{main.cpp}!numberOfRoots@{numberOfRoots}}
+\index{numberOfRoots@{numberOfRoots}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{numberOfRoots}{numberOfRoots}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{main_8cpp_ab4611c2fee0b205012e761712cdc6375}{number\+Of\+Roots}}}
+
+
+
+Enum type used for determining number of roots. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{no\_roots@{no\_roots}!main.cpp@{main.cpp}}\index{main.cpp@{main.cpp}!no\_roots@{no\_roots}}}\mbox{\Hypertarget{main_8cpp_ab4611c2fee0b205012e761712cdc6375aad7f22f8a48f53867f93875be4a83ed6}\label{main_8cpp_ab4611c2fee0b205012e761712cdc6375aad7f22f8a48f53867f93875be4a83ed6}} 
+no\+\_\+roots&Equation has no roots. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{root\_1@{root\_1}!main.cpp@{main.cpp}}\index{main.cpp@{main.cpp}!root\_1@{root\_1}}}\mbox{\Hypertarget{main_8cpp_ab4611c2fee0b205012e761712cdc6375aa935aa193b946437e5bd505536002a03}\label{main_8cpp_ab4611c2fee0b205012e761712cdc6375aa935aa193b946437e5bd505536002a03}} 
+root\+\_\+1&Equation has 1 root. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{roots\_2@{roots\_2}!main.cpp@{main.cpp}}\index{main.cpp@{main.cpp}!roots\_2@{roots\_2}}}\mbox{\Hypertarget{main_8cpp_ab4611c2fee0b205012e761712cdc6375a842e39444a6fb4c10885c66d5bd5e77e}\label{main_8cpp_ab4611c2fee0b205012e761712cdc6375a842e39444a6fb4c10885c66d5bd5e77e}} 
+roots\+\_\+2&Equation has 2 roots. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{inf\_number@{inf\_number}!main.cpp@{main.cpp}}\index{main.cpp@{main.cpp}!inf\_number@{inf\_number}}}\mbox{\Hypertarget{main_8cpp_ab4611c2fee0b205012e761712cdc6375a39a59d6c0d0902be5eb10d365cc282df}\label{main_8cpp_ab4611c2fee0b205012e761712cdc6375a39a59d6c0d0902be5eb10d365cc282df}} 
+inf\+\_\+number&Equation has infinite number of roots. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{main_8cpp_a19d25e625cb46973b35043b2d7109ac0}\label{main_8cpp_a19d25e625cb46973b35043b2d7109ac0}} 
+\index{main.cpp@{main.cpp}!resultOfCompareTwoDoubles@{resultOfCompareTwoDoubles}}
+\index{resultOfCompareTwoDoubles@{resultOfCompareTwoDoubles}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{resultOfCompareTwoDoubles}{resultOfCompareTwoDoubles}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{main_8cpp_a19d25e625cb46973b35043b2d7109ac0}{result\+Of\+Compare\+Two\+Doubles}}}
+
+
+
+Enum type used for comparing two double values. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Less@{Less}!main.cpp@{main.cpp}}\index{main.cpp@{main.cpp}!Less@{Less}}}\mbox{\Hypertarget{main_8cpp_a19d25e625cb46973b35043b2d7109ac0af2360f16fa13d5c5e9b71b733268b47e}\label{main_8cpp_a19d25e625cb46973b35043b2d7109ac0af2360f16fa13d5c5e9b71b733268b47e}} 
+Less&1st number is less than 2nd. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Equal@{Equal}!main.cpp@{main.cpp}}\index{main.cpp@{main.cpp}!Equal@{Equal}}}\mbox{\Hypertarget{main_8cpp_a19d25e625cb46973b35043b2d7109ac0a4c2ccc0164cc7fc1102a4b69361acd1e}\label{main_8cpp_a19d25e625cb46973b35043b2d7109ac0a4c2ccc0164cc7fc1102a4b69361acd1e}} 
+Equal&Numbers are equal. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{More@{More}!main.cpp@{main.cpp}}\index{main.cpp@{main.cpp}!More@{More}}}\mbox{\Hypertarget{main_8cpp_a19d25e625cb46973b35043b2d7109ac0a67ebccae5b47955d2e76065040a0428e}\label{main_8cpp_a19d25e625cb46973b35043b2d7109ac0a67ebccae5b47955d2e76065040a0428e}} 
+More&1st numbers is bigger than 2nd. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{main_8cpp_af26364c4fcb7161e470b7e073ce1ef3b}\label{main_8cpp_af26364c4fcb7161e470b7e073ce1ef3b}} 
+\index{main.cpp@{main.cpp}!resultOfInput@{resultOfInput}}
+\index{resultOfInput@{resultOfInput}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{resultOfInput}{resultOfInput}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{main_8cpp_af26364c4fcb7161e470b7e073ce1ef3b}{result\+Of\+Input}}}
+
+
+
+Enum type used for detecting an error in input. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{lackOfThreeNumbers@{lackOfThreeNumbers}!main.cpp@{main.cpp}}\index{main.cpp@{main.cpp}!lackOfThreeNumbers@{lackOfThreeNumbers}}}\mbox{\Hypertarget{main_8cpp_af26364c4fcb7161e470b7e073ce1ef3ba55f4f4cee8fc10981262b1064a7dd90f}\label{main_8cpp_af26364c4fcb7161e470b7e073ce1ef3ba55f4f4cee8fc10981262b1064a7dd90f}} 
+lack\+Of\+Three\+Numbers&Input doesn\textquotesingle{}t contain 3 numbers. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{presenceOfInvChar@{presenceOfInvChar}!main.cpp@{main.cpp}}\index{main.cpp@{main.cpp}!presenceOfInvChar@{presenceOfInvChar}}}\mbox{\Hypertarget{main_8cpp_af26364c4fcb7161e470b7e073ce1ef3ba1c17f2f155726a3fd8104c8be4b16bfc}\label{main_8cpp_af26364c4fcb7161e470b7e073ce1ef3ba1c17f2f155726a3fd8104c8be4b16bfc}} 
+presence\+Of\+Inv\+Char&Input contains char symbols. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OK@{OK}!main.cpp@{main.cpp}}\index{main.cpp@{main.cpp}!OK@{OK}}}\mbox{\Hypertarget{main_8cpp_af26364c4fcb7161e470b7e073ce1ef3ba2bc49ec37d6a5715dd23e85f1ff5bb59}\label{main_8cpp_af26364c4fcb7161e470b7e073ce1ef3ba2bc49ec37d6a5715dd23e85f1ff5bb59}} 
+OK&Input is correct. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{main_8cpp_a9ced2218dbd18f35d29413eb89a03150}\label{main_8cpp_a9ced2218dbd18f35d29413eb89a03150}} 
+\index{main.cpp@{main.cpp}!calcDiscriminant@{calcDiscriminant}}
+\index{calcDiscriminant@{calcDiscriminant}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{calcDiscriminant()}{calcDiscriminant()}}
+{\footnotesize\ttfamily double calc\+Discriminant (\begin{DoxyParamCaption}\item[{const double}]{a,  }\item[{const double}]{b,  }\item[{const double}]{c }\end{DoxyParamCaption})}
+
+
+
+This function calculates discriminant. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em a} & a coefficient in square equation, cannot be 0. \\
+\hline
+\mbox{\texttt{ in}}  & {\em b} & b coefficient in square equation. \\
+\hline
+\mbox{\texttt{ in}}  & {\em c} & c coefficient in square equation.\\
+\hline
+\end{DoxyParams}
+The following formula calculates discriminant~\newline
+ $D = b^2 - 4ac$ \mbox{\Hypertarget{main_8cpp_a81ecaf11f86b4608a945e0f5825f37f6}\label{main_8cpp_a81ecaf11f86b4608a945e0f5825f37f6}} 
+\index{main.cpp@{main.cpp}!calculateRoots@{calculateRoots}}
+\index{calculateRoots@{calculateRoots}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{calculateRoots()}{calculateRoots()}}
+{\footnotesize\ttfamily int calculate\+Roots (\begin{DoxyParamCaption}\item[{const double}]{a,  }\item[{const double}]{b,  }\item[{const double}]{c,  }\item[{double $\ast$}]{x1,  }\item[{double $\ast$}]{x2 }\end{DoxyParamCaption})}
+
+
+
+Function designed to calculate roots of square equation This function works O\+N\+LY with equations where a != 0. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em a} & a coefficient in square equation, cannot be 0. \\
+\hline
+\mbox{\texttt{ in}}  & {\em b} & b coefficient in square equation. \\
+\hline
+\mbox{\texttt{ in}}  & {\em c} & c coefficient in square equation. \\
+\hline
+\mbox{\texttt{ out}}  & {\em x1} & pointer to the 1st root of equation. \\
+\hline
+\mbox{\texttt{ out}}  & {\em x2} & pointer to the 2nd root of equation.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+N\+O\+\_\+\+R\+O\+O\+TS -\/ no roots, R\+O\+O\+T\+\_\+1 -\/ 1 root, R\+O\+O\+T\+S\+\_\+2 -\/ 2 roots.
+\end{DoxyReturn}
+First, this function calculates discriminant of equation. Then function detect\+Sign\+Of\+Discr (double D) returns number constant. After that, switch decides what case it jumps to and run case.
+
+Formula that calculates roots\+:~\newline
+ $x = (-b +- \sqrt{D})/2a$ \mbox{\Hypertarget{main_8cpp_a65c2ec16bcdcceda117301e87962fd6c}\label{main_8cpp_a65c2ec16bcdcceda117301e87962fd6c}} 
+\index{main.cpp@{main.cpp}!checkIfNullPtr@{checkIfNullPtr}}
+\index{checkIfNullPtr@{checkIfNullPtr}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{checkIfNullPtr()}{checkIfNullPtr()}}
+{\footnotesize\ttfamily void check\+If\+Null\+Ptr (\begin{DoxyParamCaption}\item[{int}]{number\+Of\+Param,  }\item[{void $\ast$}]{ptr,  }\item[{}]{... }\end{DoxyParamCaption})}
+
+
+
+Function checks if pointers have N\+U\+LL value. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em number\+Of\+Params} & number of pointers to check \\
+\hline
+\mbox{\texttt{ out}}  & {\em ptr} & pointer\\
+\hline
+\end{DoxyParams}
+This function can get different number of parametrs depending on 1st param number\+Of\+Params. Then it gets pointer values. \mbox{\Hypertarget{main_8cpp_a62a121c0f5413f1123a9f470feaf6709}\label{main_8cpp_a62a121c0f5413f1123a9f470feaf6709}} 
+\index{main.cpp@{main.cpp}!checkIfZero@{checkIfZero}}
+\index{checkIfZero@{checkIfZero}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{checkIfZero()}{checkIfZero()}}
+{\footnotesize\ttfamily int check\+If\+Zero (\begin{DoxyParamCaption}\item[{const double}]{value }\end{DoxyParamCaption})}
+
+
+
+Function that detects if double value is zero. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if true, 0 if false. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{main_8cpp_ae297997867f27fcc063cf7e6f9564846}\label{main_8cpp_ae297997867f27fcc063cf7e6f9564846}} 
+\index{main.cpp@{main.cpp}!correctInputCheck@{correctInputCheck}}
+\index{correctInputCheck@{correctInputCheck}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{correctInputCheck()}{correctInputCheck()}}
+{\footnotesize\ttfamily int correct\+Input\+Check (\begin{DoxyParamCaption}\item[{double $\ast$}]{a,  }\item[{double $\ast$}]{b,  }\item[{double $\ast$}]{c }\end{DoxyParamCaption})}
+
+
+
+This function returns error code if input is incorrect. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & a coefficient \\
+\hline
+{\em b} & b coefficient \\
+\hline
+{\em c} & c coefficient\\
+\hline
+\end{DoxyParams}
+Function initializes variable amount\+Of\+Input\+Numbers with~\newline
+the number of correctly retrieved numbers. If it is less~\newline
+than 3, function returns lack\+Of\+Three\+Numbers. If the input~\newline
+contains char symbol, it returns presence\+Of\+Inv\+Char. Else, it returns OK. \mbox{\Hypertarget{main_8cpp_aa89dfba5c05bfad33fb5957d78061dfe}\label{main_8cpp_aa89dfba5c05bfad33fb5957d78061dfe}} 
+\index{main.cpp@{main.cpp}!doubleComp@{doubleComp}}
+\index{doubleComp@{doubleComp}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{doubleComp()}{doubleComp()}}
+{\footnotesize\ttfamily int double\+Comp (\begin{DoxyParamCaption}\item[{const double}]{value\+\_\+1,  }\item[{const double}]{value\+\_\+2 }\end{DoxyParamCaption})}
+
+
+
+This function compares 2 double values. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em value\+\_\+1} & 1st value to compare. \\
+\hline
+\mbox{\texttt{ in}}  & {\em value\+\_\+2} & 2nd value to compare.\\
+\hline
+\end{DoxyParams}
+This function compares 2 double values and returns number constant from enum set result\+Of\+Compare\+Two\+Doubles. \mbox{\Hypertarget{main_8cpp_a3d575bdd5191b312fc195b00609a63c5}\label{main_8cpp_a3d575bdd5191b312fc195b00609a63c5}} 
+\index{main.cpp@{main.cpp}!ifTwoPtrsHaveDiffAdr@{ifTwoPtrsHaveDiffAdr}}
+\index{ifTwoPtrsHaveDiffAdr@{ifTwoPtrsHaveDiffAdr}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{ifTwoPtrsHaveDiffAdr()}{ifTwoPtrsHaveDiffAdr()}}
+{\footnotesize\ttfamily bool if\+Two\+Ptrs\+Have\+Diff\+Adr (\begin{DoxyParamCaption}\item[{double $\ast$}]{ptr\+\_\+1,  }\item[{double $\ast$}]{ptr\+\_\+2 }\end{DoxyParamCaption})}
+
+
+
+This function checks if 2 pointers have same address. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em ptr1} & 1st pointer value \\
+\hline
+\mbox{\texttt{ out}}  & {\em ptr2} & 2nd pointer value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if have same adress, 1 if different 
+\end{DoxyReturn}
+\mbox{\Hypertarget{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Program that solves square equation~\newline
+ $ax^2 + bx + c = 0$ \mbox{\Hypertarget{main_8cpp_a1234798f34fc85ebb331ebf0c7ea7ce5}\label{main_8cpp_a1234798f34fc85ebb331ebf0c7ea7ce5}} 
+\index{main.cpp@{main.cpp}!minusZeroFix@{minusZeroFix}}
+\index{minusZeroFix@{minusZeroFix}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{minusZeroFix()}{minusZeroFix()}}
+{\footnotesize\ttfamily double minus\+Zero\+Fix (\begin{DoxyParamCaption}\item[{const double}]{value }\end{DoxyParamCaption})}
+
+
+
+Function designed to fix bug with -\/0. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em x} & value that may be -\/0.\\
+\hline
+\end{DoxyParams}
+This function compares x with zero and if they are similar, function returns absolute value of x. If they aren\textquotesingle{}t, it just returns x. \mbox{\Hypertarget{main_8cpp_a45fff354c18e9abb10784ae4a2eb77df}\label{main_8cpp_a45fff354c18e9abb10784ae4a2eb77df}} 
+\index{main.cpp@{main.cpp}!showError@{showError}}
+\index{showError@{showError}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{showError()}{showError()}}
+{\footnotesize\ttfamily void show\+Error (\begin{DoxyParamCaption}\item[{const int}]{result\+Of\+Input }\end{DoxyParamCaption})}
+
+
+
+This function prints type of error occured during program executing. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em code} & number from enum set result\+Of\+Correct\+Input \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{main_8cpp_a483946fdcaad59f70cfbe87cfc4e3c78}\label{main_8cpp_a483946fdcaad59f70cfbe87cfc4e3c78}} 
+\index{main.cpp@{main.cpp}!showRoots@{showRoots}}
+\index{showRoots@{showRoots}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{showRoots()}{showRoots()}}
+{\footnotesize\ttfamily void show\+Roots (\begin{DoxyParamCaption}\item[{const int}]{number\+Of\+Roots,  }\item[{const double}]{x1,  }\item[{const double}]{x2 }\end{DoxyParamCaption})}
+
+
+
+This function display roots. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em number\+Of\+Roots} & contains value from enum number\+Of\+Roots. \\
+\hline
+\mbox{\texttt{ in}}  & {\em x1} & 1st root. \\
+\hline
+\mbox{\texttt{ in}}  & {\em x2} & 2nd root.\\
+\hline
+\end{DoxyParams}
+This function gets value from enum set number\+Of\+Roots and then display roots. \mbox{\Hypertarget{main_8cpp_aeb956d08477040e3d54ef83c3ce717e2}\label{main_8cpp_aeb956d08477040e3d54ef83c3ce717e2}} 
+\index{main.cpp@{main.cpp}!solveLinearEq@{solveLinearEq}}
+\index{solveLinearEq@{solveLinearEq}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{solveLinearEq()}{solveLinearEq()}}
+{\footnotesize\ttfamily int solve\+Linear\+Eq (\begin{DoxyParamCaption}\item[{const double}]{b,  }\item[{const double}]{c,  }\item[{double $\ast$}]{x }\end{DoxyParamCaption})}
+
+
+
+This function solves linear equation. $bx + c = 0$. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em b} & b coefficient in linear equation. \\
+\hline
+\mbox{\texttt{ in}}  & {\em c} & c coefficient in linear equation. \\
+\hline
+\mbox{\texttt{ in}}  & {\em x} & pointer to the root of equation.\\
+\hline
+\end{DoxyParams}
+This function checks coefficients if they are zero\textquotesingle{}s and then calculate roots.
+
+Formula that calculates root\+:~\newline
+ $x = -b/c$ \mbox{\Hypertarget{main_8cpp_a40e24d4a25bacd4ebc0d20c1af374481}\label{main_8cpp_a40e24d4a25bacd4ebc0d20c1af374481}} 
+\index{main.cpp@{main.cpp}!solveSqEq@{solveSqEq}}
+\index{solveSqEq@{solveSqEq}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{solveSqEq()}{solveSqEq()}}
+{\footnotesize\ttfamily int solve\+Sq\+Eq (\begin{DoxyParamCaption}\item[{const int}]{input\+Check\+Result,  }\item[{const double}]{a,  }\item[{const double}]{b,  }\item[{const double}]{c,  }\item[{double $\ast$}]{x1,  }\item[{double $\ast$}]{x2 }\end{DoxyParamCaption})}
+
+
+
+Function designed to calculate roots of square equation. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em a} & pointer to the a coefficient in square equation, cannot be 0. \\
+\hline
+\mbox{\texttt{ out}}  & {\em b} & pointer to the b coefficient in square equation. \\
+\hline
+\mbox{\texttt{ out}}  & {\em c} & pointer to the c coefficient in square equation. \\
+\hline
+\mbox{\texttt{ out}}  & {\em x1} & pointer to the 1st root of equation. \\
+\hline
+\mbox{\texttt{ out}}  & {\em x2} & pointer to the 2nd root of equation. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/1 -\/ input is I\+N\+C\+O\+R\+R\+E\+CT First, this function calls function correct\+Input\+Check.~\newline
+If then input\+Check\+Result equals OK, it decides whether it~\newline
+is linear or square equation. After that, it calls solve\+Linear\+Eq or calculate\+Roots. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{main_8cpp_ac23aab2ae556abc0eea5aeed87ceb1cf}\label{main_8cpp_ac23aab2ae556abc0eea5aeed87ceb1cf}} 
+\index{main.cpp@{main.cpp}!unitTestcalcRoots@{unitTestcalcRoots}}
+\index{unitTestcalcRoots@{unitTestcalcRoots}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{unitTestcalcRoots()}{unitTestcalcRoots()}}
+{\footnotesize\ttfamily void unit\+Testcalc\+Roots (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Function designed to test function calculate\+Roots 
+\begin{DoxyParams}{Parameters}
+{\em void} & Function checks all 3 variants of calculate\+Roots function return value. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{main_8cpp_affa98a3b78d261efb63ceb8191a5a986}\label{main_8cpp_affa98a3b78d261efb63ceb8191a5a986}} 
+\index{main.cpp@{main.cpp}!unitTestSolveLinEq@{unitTestSolveLinEq}}
+\index{unitTestSolveLinEq@{unitTestSolveLinEq}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{unitTestSolveLinEq()}{unitTestSolveLinEq()}}
+{\footnotesize\ttfamily void unit\+Test\+Solve\+Lin\+Eq (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Function designed to test function solve\+Linear\+Eq 
+\begin{DoxyParams}{Parameters}
+{\em void} & Function checks all 3 variants of solve\+Linear\+Eq function return value. \\
+\hline
+\end{DoxyParams}

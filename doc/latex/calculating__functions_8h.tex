@@ -1,0 +1,167 @@
+\hypertarget{calculating__functions_8h}{}\doxysection{/home/andrey/\+Downloads/solve\+Square\+Equation-\/master (1)/header files/calculating\+\_\+functions.h File Reference}
+\label{calculating__functions_8h}\index{/home/andrey/Downloads/solveSquareEquation-\/master (1)/header files/calculating\_functions.h@{/home/andrey/Downloads/solveSquareEquation-\/master (1)/header files/calculating\_functions.h}}
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$assert.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}common\+\_\+functions.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}display\+\_\+functions.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}input\+\_\+functions.\+h\char`\"{}}\newline
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{calculating__functions_8h_ab4611c2fee0b205012e761712cdc6375}{number\+Of\+Roots}} \{ \mbox{\hyperlink{calculating__functions_8h_ab4611c2fee0b205012e761712cdc6375ab9a321da349ac1355b717745736ad90c}{N\+O\+\_\+\+R\+O\+O\+TS}}, 
+\mbox{\hyperlink{calculating__functions_8h_ab4611c2fee0b205012e761712cdc6375a29a771bb0733e1624ba6e19cad0948c1}{R\+O\+O\+T\+\_\+1}}, 
+\mbox{\hyperlink{calculating__functions_8h_ab4611c2fee0b205012e761712cdc6375ac83c6b3f7bc7eeaf912c0eadfbdd7cda}{R\+O\+O\+T\+S\+\_\+2}}, 
+\mbox{\hyperlink{calculating__functions_8h_ab4611c2fee0b205012e761712cdc6375a29dd71f3a19d31231f3352e0591a1ecb}{I\+N\+F\+\_\+\+N\+U\+M\+B\+ER}}
+ \}
+\begin{DoxyCompactList}\small\item\em Enum type used for determining number of roots. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{calculating__functions_8h_a21d61fe8251f5bc62a21bc471e66fe28}{solve\+Sq\+Eq}} (const double a, const double b, const double c, double $\ast$x1, double $\ast$x2)
+\begin{DoxyCompactList}\small\item\em Function designed to calculate roots of square equation. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{calculating__functions_8h_a53e6f9c51f26a75b6e46f244ee7b57e3}{calculate\+Roots\+Of\+Sq\+Eq}} (const double a, const double b, const double c, double $\ast$x1, double $\ast$x2)
+\begin{DoxyCompactList}\small\item\em Function designed to calculate roots of square equation This function works O\+N\+LY with equations where a != 0. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{calculating__functions_8h_aeb956d08477040e3d54ef83c3ce717e2}{solve\+Linear\+Eq}} (const double b, const double c, double $\ast$x)
+\begin{DoxyCompactList}\small\item\em This function solves linear equation. $bx + c = 0$. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{calculating__functions_8h_a9ced2218dbd18f35d29413eb89a03150}{calc\+Discriminant}} (const double a, const double b, const double c)
+\begin{DoxyCompactList}\small\item\em This function calculates discriminant. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{calculating__functions_8h_ab4611c2fee0b205012e761712cdc6375}\label{calculating__functions_8h_ab4611c2fee0b205012e761712cdc6375}} 
+\index{calculating\_functions.h@{calculating\_functions.h}!numberOfRoots@{numberOfRoots}}
+\index{numberOfRoots@{numberOfRoots}!calculating\_functions.h@{calculating\_functions.h}}
+\doxysubsubsection{\texorpdfstring{numberOfRoots}{numberOfRoots}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{calculating__functions_8h_ab4611c2fee0b205012e761712cdc6375}{number\+Of\+Roots}}}
+
+
+
+Enum type used for determining number of roots. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NO\_ROOTS@{NO\_ROOTS}!calculating\_functions.h@{calculating\_functions.h}}\index{calculating\_functions.h@{calculating\_functions.h}!NO\_ROOTS@{NO\_ROOTS}}}\mbox{\Hypertarget{calculating__functions_8h_ab4611c2fee0b205012e761712cdc6375ab9a321da349ac1355b717745736ad90c}\label{calculating__functions_8h_ab4611c2fee0b205012e761712cdc6375ab9a321da349ac1355b717745736ad90c}} 
+N\+O\+\_\+\+R\+O\+O\+TS&Equation has no roots. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ROOT\_1@{ROOT\_1}!calculating\_functions.h@{calculating\_functions.h}}\index{calculating\_functions.h@{calculating\_functions.h}!ROOT\_1@{ROOT\_1}}}\mbox{\Hypertarget{calculating__functions_8h_ab4611c2fee0b205012e761712cdc6375a29a771bb0733e1624ba6e19cad0948c1}\label{calculating__functions_8h_ab4611c2fee0b205012e761712cdc6375a29a771bb0733e1624ba6e19cad0948c1}} 
+R\+O\+O\+T\+\_\+1&Equation has 1 root. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ROOTS\_2@{ROOTS\_2}!calculating\_functions.h@{calculating\_functions.h}}\index{calculating\_functions.h@{calculating\_functions.h}!ROOTS\_2@{ROOTS\_2}}}\mbox{\Hypertarget{calculating__functions_8h_ab4611c2fee0b205012e761712cdc6375ac83c6b3f7bc7eeaf912c0eadfbdd7cda}\label{calculating__functions_8h_ab4611c2fee0b205012e761712cdc6375ac83c6b3f7bc7eeaf912c0eadfbdd7cda}} 
+R\+O\+O\+T\+S\+\_\+2&Equation has 2 roots. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{INF\_NUMBER@{INF\_NUMBER}!calculating\_functions.h@{calculating\_functions.h}}\index{calculating\_functions.h@{calculating\_functions.h}!INF\_NUMBER@{INF\_NUMBER}}}\mbox{\Hypertarget{calculating__functions_8h_ab4611c2fee0b205012e761712cdc6375a29dd71f3a19d31231f3352e0591a1ecb}\label{calculating__functions_8h_ab4611c2fee0b205012e761712cdc6375a29dd71f3a19d31231f3352e0591a1ecb}} 
+I\+N\+F\+\_\+\+N\+U\+M\+B\+ER&Equation has infinite number of roots. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{calculating__functions_8h_a9ced2218dbd18f35d29413eb89a03150}\label{calculating__functions_8h_a9ced2218dbd18f35d29413eb89a03150}} 
+\index{calculating\_functions.h@{calculating\_functions.h}!calcDiscriminant@{calcDiscriminant}}
+\index{calcDiscriminant@{calcDiscriminant}!calculating\_functions.h@{calculating\_functions.h}}
+\doxysubsubsection{\texorpdfstring{calcDiscriminant()}{calcDiscriminant()}}
+{\footnotesize\ttfamily double calc\+Discriminant (\begin{DoxyParamCaption}\item[{const double}]{a,  }\item[{const double}]{b,  }\item[{const double}]{c }\end{DoxyParamCaption})}
+
+
+
+This function calculates discriminant. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em a} & a coefficient in square equation, cannot be 0. \\
+\hline
+\mbox{\texttt{ in}}  & {\em b} & b coefficient in square equation. \\
+\hline
+\mbox{\texttt{ in}}  & {\em c} & c coefficient in square equation. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+value of discriminant.
+\end{DoxyReturn}
+The following formula calculates discriminant~\newline
+ $D = b^2 - 4ac$ \mbox{\Hypertarget{calculating__functions_8h_a53e6f9c51f26a75b6e46f244ee7b57e3}\label{calculating__functions_8h_a53e6f9c51f26a75b6e46f244ee7b57e3}} 
+\index{calculating\_functions.h@{calculating\_functions.h}!calculateRootsOfSqEq@{calculateRootsOfSqEq}}
+\index{calculateRootsOfSqEq@{calculateRootsOfSqEq}!calculating\_functions.h@{calculating\_functions.h}}
+\doxysubsubsection{\texorpdfstring{calculateRootsOfSqEq()}{calculateRootsOfSqEq()}}
+{\footnotesize\ttfamily int calculate\+Roots\+Of\+Sq\+Eq (\begin{DoxyParamCaption}\item[{const double}]{a,  }\item[{const double}]{b,  }\item[{const double}]{c,  }\item[{double $\ast$}]{x1,  }\item[{double $\ast$}]{x2 }\end{DoxyParamCaption})}
+
+
+
+Function designed to calculate roots of square equation This function works O\+N\+LY with equations where a != 0. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em a} & a coefficient in square equation, cannot be 0. \\
+\hline
+\mbox{\texttt{ in}}  & {\em b} & b coefficient in square equation. \\
+\hline
+\mbox{\texttt{ in}}  & {\em c} & c coefficient in square equation. \\
+\hline
+\mbox{\texttt{ out}}  & {\em x1} & pointer to the 1st root of equation. \\
+\hline
+\mbox{\texttt{ out}}  & {\em x2} & pointer to the 2nd root of equation.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+N\+O\+\_\+\+R\+O\+O\+TS -\/ no roots, R\+O\+O\+T\+\_\+1 -\/ 1 root, R\+O\+O\+T\+S\+\_\+2 -\/ 2 roots.
+\end{DoxyReturn}
+First, this function calculates discriminant of equation. Then function detect\+Sign\+Of\+Discr (double D) returns number constant. After that, switch decides what case it jumps to and run case.
+
+Formula that calculates roots\+:~\newline
+ $x = (-b +- \sqrt{D})/2a$ \mbox{\Hypertarget{calculating__functions_8h_aeb956d08477040e3d54ef83c3ce717e2}\label{calculating__functions_8h_aeb956d08477040e3d54ef83c3ce717e2}} 
+\index{calculating\_functions.h@{calculating\_functions.h}!solveLinearEq@{solveLinearEq}}
+\index{solveLinearEq@{solveLinearEq}!calculating\_functions.h@{calculating\_functions.h}}
+\doxysubsubsection{\texorpdfstring{solveLinearEq()}{solveLinearEq()}}
+{\footnotesize\ttfamily int solve\+Linear\+Eq (\begin{DoxyParamCaption}\item[{const double}]{b,  }\item[{const double}]{c,  }\item[{double $\ast$}]{x }\end{DoxyParamCaption})}
+
+
+
+This function solves linear equation. $bx + c = 0$. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em b} & b coefficient in linear equation. \\
+\hline
+\mbox{\texttt{ in}}  & {\em c} & c coefficient in linear equation. \\
+\hline
+\mbox{\texttt{ in}}  & {\em x} & pointer to the root of equation. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+number of roots.
+\end{DoxyReturn}
+This function checks coefficients if they are zero\textquotesingle{}s and then calculate roots.
+
+Formula that calculates root\+:~\newline
+ $x = -b/c$ \mbox{\Hypertarget{calculating__functions_8h_a21d61fe8251f5bc62a21bc471e66fe28}\label{calculating__functions_8h_a21d61fe8251f5bc62a21bc471e66fe28}} 
+\index{calculating\_functions.h@{calculating\_functions.h}!solveSqEq@{solveSqEq}}
+\index{solveSqEq@{solveSqEq}!calculating\_functions.h@{calculating\_functions.h}}
+\doxysubsubsection{\texorpdfstring{solveSqEq()}{solveSqEq()}}
+{\footnotesize\ttfamily int solve\+Sq\+Eq (\begin{DoxyParamCaption}\item[{const double}]{a,  }\item[{const double}]{b,  }\item[{const double}]{c,  }\item[{double $\ast$}]{x1,  }\item[{double $\ast$}]{x2 }\end{DoxyParamCaption})}
+
+
+
+Function designed to calculate roots of square equation. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em a} & a coefficient in square equation, cannot be 0. \\
+\hline
+\mbox{\texttt{ out}}  & {\em b} & b coefficient in square equation. \\
+\hline
+\mbox{\texttt{ out}}  & {\em c} & c coefficient in square equation. \\
+\hline
+\mbox{\texttt{ out}}  & {\em x1} & pointer to the 1st root of equation. \\
+\hline
+\mbox{\texttt{ out}}  & {\em x2} & pointer to the 2nd root of equation. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/1 -\/ input is I\+N\+C\+O\+R\+R\+E\+CT. First, this function calls function correct\+Input\+Check.~\newline
+If then input\+Check\+Result equals OK, it decides whether this~\newline
+is linear or square equation. After that, it calls solve\+Linear\+Eq or calculate\+Roots functions. 
+\end{DoxyReturn}

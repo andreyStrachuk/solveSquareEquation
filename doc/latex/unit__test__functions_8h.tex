@@ -1,0 +1,84 @@
+\hypertarget{unit__test__functions_8h}{}\doxysection{/home/andrey/\+Downloads/solve\+Square\+Equation-\/master (1)/header files/unit\+\_\+test\+\_\+functions.h File Reference}
+\label{unit__test__functions_8h}\index{/home/andrey/Downloads/solveSquareEquation-\/master (1)/header files/unit\_test\_functions.h@{/home/andrey/Downloads/solveSquareEquation-\/master (1)/header files/unit\_test\_functions.h}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}calculating\+\_\+functions.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}display\+\_\+functions.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}common\+\_\+functions.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}input\+\_\+functions.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}unit\+\_\+test\+\_\+functions.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{unit__test__functions_8h_aed7dc1e20ba617b7e3b5c9880e3631fa}{unit\+Test\+Solve\+Sq\+Eq}} (void)
+\item 
+void \mbox{\hyperlink{unit__test__functions_8h_affa98a3b78d261efb63ceb8191a5a986}{unit\+Test\+Solve\+Lin\+Eq}} (void)
+\item 
+void \mbox{\hyperlink{unit__test__functions_8h_a9610cddc1805a78c0caad81fcf59d66f}{roots\+Sq\+Test}} (double a, double b, double c, double x1\+\_\+r, double x2\+\_\+r, double $\ast$x1, double $\ast$x2)
+\item 
+void \mbox{\hyperlink{unit__test__functions_8h_a69ad820a6906a6de9919845db8bc505d}{root\+Lin\+Test}} (double b, double c, double x\+\_\+r, double $\ast$x\+\_\+p)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{unit__test__functions_8h_a69ad820a6906a6de9919845db8bc505d}\label{unit__test__functions_8h_a69ad820a6906a6de9919845db8bc505d}} 
+\index{unit\_test\_functions.h@{unit\_test\_functions.h}!rootLinTest@{rootLinTest}}
+\index{rootLinTest@{rootLinTest}!unit\_test\_functions.h@{unit\_test\_functions.h}}
+\doxysubsubsection{\texorpdfstring{rootLinTest()}{rootLinTest()}}
+{\footnotesize\ttfamily void root\+Lin\+Test (\begin{DoxyParamCaption}\item[{double}]{b,  }\item[{double}]{c,  }\item[{double}]{x\+\_\+r,  }\item[{double $\ast$}]{x\+\_\+p }\end{DoxyParamCaption})}
+
+Function checks if function solve\+Lin\+Eq works properly. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em b} & b coefficient \\
+\hline
+\mbox{\texttt{ in}}  & {\em c} & c coefficient \\
+\hline
+\mbox{\texttt{ in}}  & {\em x\+\_\+r} & real value of root \\
+\hline
+\mbox{\texttt{ in}}  & {\em x} & pointer to the x \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{unit__test__functions_8h_a9610cddc1805a78c0caad81fcf59d66f}\label{unit__test__functions_8h_a9610cddc1805a78c0caad81fcf59d66f}} 
+\index{unit\_test\_functions.h@{unit\_test\_functions.h}!rootsSqTest@{rootsSqTest}}
+\index{rootsSqTest@{rootsSqTest}!unit\_test\_functions.h@{unit\_test\_functions.h}}
+\doxysubsubsection{\texorpdfstring{rootsSqTest()}{rootsSqTest()}}
+{\footnotesize\ttfamily void roots\+Sq\+Test (\begin{DoxyParamCaption}\item[{double}]{a,  }\item[{double}]{b,  }\item[{double}]{c,  }\item[{double}]{x1\+\_\+r,  }\item[{double}]{x2\+\_\+r,  }\item[{double $\ast$}]{x1,  }\item[{double $\ast$}]{x2 }\end{DoxyParamCaption})}
+
+Function checks if function solve\+Sq\+Eq works properly. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em a} & a coefficient \\
+\hline
+\mbox{\texttt{ in}}  & {\em b} & b coefficient \\
+\hline
+\mbox{\texttt{ in}}  & {\em c} & c coefficient \\
+\hline
+\mbox{\texttt{ in}}  & {\em x1\+\_\+r} & real value of 1st root \\
+\hline
+\mbox{\texttt{ in}}  & {\em x2\+\_\+r} & real value of 2nd root \\
+\hline
+\mbox{\texttt{ in}}  & {\em x1} & pointer to the x1 \\
+\hline
+\mbox{\texttt{ in}}  & {\em x2} & pointer to the x2 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{unit__test__functions_8h_affa98a3b78d261efb63ceb8191a5a986}\label{unit__test__functions_8h_affa98a3b78d261efb63ceb8191a5a986}} 
+\index{unit\_test\_functions.h@{unit\_test\_functions.h}!unitTestSolveLinEq@{unitTestSolveLinEq}}
+\index{unitTestSolveLinEq@{unitTestSolveLinEq}!unit\_test\_functions.h@{unit\_test\_functions.h}}
+\doxysubsubsection{\texorpdfstring{unitTestSolveLinEq()}{unitTestSolveLinEq()}}
+{\footnotesize\ttfamily void unit\+Test\+Solve\+Lin\+Eq (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Function designed to test function solve\+Linear\+Eq 
+\begin{DoxyParams}{Parameters}
+{\em void} & Function checks all 3 variants of solve\+Linear\+Eq function return value. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{unit__test__functions_8h_aed7dc1e20ba617b7e3b5c9880e3631fa}\label{unit__test__functions_8h_aed7dc1e20ba617b7e3b5c9880e3631fa}} 
+\index{unit\_test\_functions.h@{unit\_test\_functions.h}!unitTestSolveSqEq@{unitTestSolveSqEq}}
+\index{unitTestSolveSqEq@{unitTestSolveSqEq}!unit\_test\_functions.h@{unit\_test\_functions.h}}
+\doxysubsubsection{\texorpdfstring{unitTestSolveSqEq()}{unitTestSolveSqEq()}}
+{\footnotesize\ttfamily void unit\+Test\+Solve\+Sq\+Eq (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Function designed to test function calculate\+Roots 
+\begin{DoxyParams}{Parameters}
+{\em void} & Function checks all 3 variants of calculate\+Roots function return value. \\
+\hline
+\end{DoxyParams}

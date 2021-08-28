@@ -1,0 +1,31 @@
+\hypertarget{fix_8cpp}{}\doxysection{/home/andrey/coding/solve\+Square\+Equation/cpp files/fix.cpp File Reference}
+\label{fix_8cpp}\index{/home/andrey/coding/solveSquareEquation/cpp files/fix.cpp@{/home/andrey/coding/solveSquareEquation/cpp files/fix.cpp}}
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}fix\+\_\+functions.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}comp\+\_\+functions.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{fix_8cpp_a1234798f34fc85ebb331ebf0c7ea7ce5}{minus\+Zero\+Fix}} (const double x)
+\begin{DoxyCompactList}\small\item\em Function designed to fix bug with -\/0. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{fix_8cpp_a1234798f34fc85ebb331ebf0c7ea7ce5}\label{fix_8cpp_a1234798f34fc85ebb331ebf0c7ea7ce5}} 
+\index{fix.cpp@{fix.cpp}!minusZeroFix@{minusZeroFix}}
+\index{minusZeroFix@{minusZeroFix}!fix.cpp@{fix.cpp}}
+\doxysubsubsection{\texorpdfstring{minusZeroFix()}{minusZeroFix()}}
+{\footnotesize\ttfamily double minus\+Zero\+Fix (\begin{DoxyParamCaption}\item[{const double}]{value }\end{DoxyParamCaption})}
+
+
+
+Function designed to fix bug with -\/0. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em x} & value that may be -\/0.\+0. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+value if it is not a -\/0.\+0, 0 if it is -\/0. This function compares x with zero and if they are similar, function returns absolute value of x. If they aren\textquotesingle{}t, it just returns x. 
+\end{DoxyReturn}

@@ -1,0 +1,74 @@
+\hypertarget{input__functions_8h}{}\doxysection{/home/andrey/\+Downloads/solve\+Square\+Equation-\/master (1)/header files/input\+\_\+functions.h File Reference}
+\label{input__functions_8h}\index{/home/andrey/Downloads/solveSquareEquation-\/master (1)/header files/input\_functions.h@{/home/andrey/Downloads/solveSquareEquation-\/master (1)/header files/input\_functions.h}}
+{\ttfamily \#include $<$assert.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}common\+\_\+functions.\+h\char`\"{}}\newline
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{input__functions_8h_af26364c4fcb7161e470b7e073ce1ef3b}{result\+Of\+Input}} \{ \mbox{\hyperlink{input__functions_8h_af26364c4fcb7161e470b7e073ce1ef3ba55f4f4cee8fc10981262b1064a7dd90f}{lack\+Of\+Three\+Numbers}}, 
+\mbox{\hyperlink{input__functions_8h_af26364c4fcb7161e470b7e073ce1ef3ba1c17f2f155726a3fd8104c8be4b16bfc}{presence\+Of\+Inv\+Char}}, 
+\mbox{\hyperlink{input__functions_8h_af26364c4fcb7161e470b7e073ce1ef3ba2bc49ec37d6a5715dd23e85f1ff5bb59}{OK}}
+ \}
+\begin{DoxyCompactList}\small\item\em Enum type used for detecting an error in input. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{input__functions_8h_aad557ed09e87f78fcbb274f08fff3962}{input\+And\+Check}} (double $\ast$a, double $\ast$b, double $\ast$c)
+\begin{DoxyCompactList}\small\item\em This function returns error code if input is incorrect. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{input__functions_8h_af26364c4fcb7161e470b7e073ce1ef3b}\label{input__functions_8h_af26364c4fcb7161e470b7e073ce1ef3b}} 
+\index{input\_functions.h@{input\_functions.h}!resultOfInput@{resultOfInput}}
+\index{resultOfInput@{resultOfInput}!input\_functions.h@{input\_functions.h}}
+\doxysubsubsection{\texorpdfstring{resultOfInput}{resultOfInput}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{input__functions_8h_af26364c4fcb7161e470b7e073ce1ef3b}{result\+Of\+Input}}}
+
+
+
+Enum type used for detecting an error in input. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{lackOfThreeNumbers@{lackOfThreeNumbers}!input\_functions.h@{input\_functions.h}}\index{input\_functions.h@{input\_functions.h}!lackOfThreeNumbers@{lackOfThreeNumbers}}}\mbox{\Hypertarget{input__functions_8h_af26364c4fcb7161e470b7e073ce1ef3ba55f4f4cee8fc10981262b1064a7dd90f}\label{input__functions_8h_af26364c4fcb7161e470b7e073ce1ef3ba55f4f4cee8fc10981262b1064a7dd90f}} 
+lack\+Of\+Three\+Numbers&Input doesn\textquotesingle{}t contain 3 numbers. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{presenceOfInvChar@{presenceOfInvChar}!input\_functions.h@{input\_functions.h}}\index{input\_functions.h@{input\_functions.h}!presenceOfInvChar@{presenceOfInvChar}}}\mbox{\Hypertarget{input__functions_8h_af26364c4fcb7161e470b7e073ce1ef3ba1c17f2f155726a3fd8104c8be4b16bfc}\label{input__functions_8h_af26364c4fcb7161e470b7e073ce1ef3ba1c17f2f155726a3fd8104c8be4b16bfc}} 
+presence\+Of\+Inv\+Char&Input contains char symbols. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OK@{OK}!input\_functions.h@{input\_functions.h}}\index{input\_functions.h@{input\_functions.h}!OK@{OK}}}\mbox{\Hypertarget{input__functions_8h_af26364c4fcb7161e470b7e073ce1ef3ba2bc49ec37d6a5715dd23e85f1ff5bb59}\label{input__functions_8h_af26364c4fcb7161e470b7e073ce1ef3ba2bc49ec37d6a5715dd23e85f1ff5bb59}} 
+OK&Input is correct. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{input__functions_8h_aad557ed09e87f78fcbb274f08fff3962}\label{input__functions_8h_aad557ed09e87f78fcbb274f08fff3962}} 
+\index{input\_functions.h@{input\_functions.h}!inputAndCheck@{inputAndCheck}}
+\index{inputAndCheck@{inputAndCheck}!input\_functions.h@{input\_functions.h}}
+\doxysubsubsection{\texorpdfstring{inputAndCheck()}{inputAndCheck()}}
+{\footnotesize\ttfamily int input\+And\+Check (\begin{DoxyParamCaption}\item[{double $\ast$}]{a,  }\item[{double $\ast$}]{b,  }\item[{double $\ast$}]{c }\end{DoxyParamCaption})}
+
+
+
+This function returns error code if input is incorrect. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & a coefficient. \\
+\hline
+{\em b} & b coefficient. \\
+\hline
+{\em c} & c coefficient. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+input\+Check\+Result -\/ constant from enum set result\+Of\+Input.
+\end{DoxyReturn}
+Function initializes variable amount\+Of\+Input\+Numbers with~\newline
+the number of correctly retrieved numbers. If it is less~\newline
+than 3, function returns lack\+Of\+Three\+Numbers. If the input~\newline
+contains char symbol, it returns presence\+Of\+Inv\+Char. Else, it returns OK. 
